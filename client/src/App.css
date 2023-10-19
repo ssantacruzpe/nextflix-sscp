@@ -5,6 +5,21 @@
 body {
   background-color: #282c34;
 }
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 6px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

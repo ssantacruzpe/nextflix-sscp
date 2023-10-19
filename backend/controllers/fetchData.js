@@ -38,4 +38,17 @@ const getImages = async (req, res, imagePath) => {
   }
 };
 
-module.exports = { getTrendingMovies, getImages };
+const getExternalID = async (req, res, tmdbID) => {
+  try {
+    const response = await axios.get(
+      `https://api.themoviedb.org/3/movie/${tmdbID}/external_ids?api_key=7d07a9d7edc5645b1c40adf7c00a4100&language=en-US`,
+      options,
+    );
+
+    res.json(response.data);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+module.exports = { getTrendingMovies, getImages, getExternalID };

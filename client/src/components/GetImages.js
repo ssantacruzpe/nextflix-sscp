@@ -5,7 +5,6 @@ const ImageComponent = ({ imagePath }) => {
   const [imageURL, setImageURL] = useState("");
 
   useEffect(() => {
-    // Construct the full image URL based on your server URL and the image path
     const fullImagePath = `http://localhost:3000/images${imagePath}`;
 
     axios
