@@ -19,18 +19,22 @@ const getTrendingMovies = async (req, res) => {
   }
 };
 
+//this is middleware to fetch images from the api
 const getImages = async (req, res, imagePath) => {
   try {
     const response = await axios.get(
       `https://image.tmdb.org/t/p/w342/${imagePath}`,
+      { responseType: "stream" },
+
       options,
     );
-    const data = response.data;
 
-    res.json(data); // Respond with the image data as JSON, for example
+    res.setHeader("Content-Type", "image/jpeg");
+
+    response.data.pipe(res);
   } catch (error) {
     console.log(error);
-    res.status(500).send("Internal Server Error"); // Handle errors and respond accordingly
+    res.status(500).send("Internal Server Error");
   }
 };
 
