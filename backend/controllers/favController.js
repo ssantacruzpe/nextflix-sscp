@@ -36,7 +36,7 @@ const removeFav = async (req, res) =>{
     }
     res.json(updatedImage);
   } catch (error) {
-    res.status(500).send({msg:"Internal error, failed to remove favorite "})
+    res.status(500).send({msg:"Internal error, failed to remove favorite"})
   }
 };
 
