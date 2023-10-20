@@ -1,4 +1,4 @@
-
+/*
 
 const Fav = require("../models/favModels.js") 
 
@@ -25,4 +25,22 @@ const getAllFav = async (req, res) => {
   }
 };
 
-module.exports = {markFav, getAllFav}
+//Remove favorite 
+
+const removeFav = async (req, res) =>{
+  const { id } = req.params; 
+  try {
+    const updatedImage = await Image.findByIdAndUpdate(id, { isFavorite: false }, { new: true });
+    if (!updatedImage) {
+      return res.status(404).json({ error: "Movie not found" });
+    }
+    res.json(updatedImage);
+  } catch (error) {
+    res.status(500).send({msg:"Internal error, failed to remove favorite "})
+  }
+};
+
+
+module.exports = {markFav, getAllFav, removeFav}
+
+*/
