@@ -1,5 +1,5 @@
 const express = require('express');
-const router = express.Router();
+const Router = express.Router
 const searchController = require('../controllers/searchController')
 
 // Define a route for searching movies
