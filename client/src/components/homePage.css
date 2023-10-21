@@ -1,0 +1,139 @@
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.movie-grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hiding scrollbar for IE, Edge and Firefox */
+.movie-grid {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.movie-item {
+  position: relative;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: #ddd;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(244, 4, 4, 0.1);
+  transition: transform 0.2s ease;
+  background-color: rgb(10, 10, 10);
+}
+
+.movie-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.movie-item:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 14px;
+}
+
+.movie-item h2,
+.movie-item p {
+  margin: 0;
+}
+
+.movie-item p:nth-child(3) {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.movie-item p:nth-child(2) {
+  color: #3498db;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.player-modal {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.792);
+  padding-top: 7%;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-content {
+  display: flex;
+  background-color: #19181807;
+  width: 80%;
+
+  padding-left: 150px;
+  box-shadow: 0 4px 8px 0 rgba(26, 25, 25, 0.019);
+  align-items: center;
+  justify-content: center;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+}
+
+.movie-details {
+  width: 30%;
+  background-color: #00000000;
+  color: #ddd;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #f90202;
+}
+
+@media (max-width: 1200px) {
+  .player-content {
+    flex-direction: column;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  .movie-details {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .movie-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
