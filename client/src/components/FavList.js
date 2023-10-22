@@ -16,7 +16,7 @@ const FavoriteList = () => {
     };
     fetchFavoriteImage();
   }, []);
-
+ 
   return (
     <div className='container'>
       <div className='favorite-list'>
