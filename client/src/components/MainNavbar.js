@@ -2,20 +2,21 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Logo from "../images/nextflixlogo.png"
 
 function MainNavbar() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="#home">
-          {/* <img
-            src="/path-to-your-logo.png" 
-            width="30"
+          <img
+            src={Logo}
+            width="120"
             height="30"
             className="d-inline-block align-top"
-            alt="FerryTravel Logo"
-          /> */}
-          Nextflix
+            alt="Nextflix Logo"
+          />
+   
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

@@ -10,7 +10,5 @@ main()
   .catch((err) => console.log(err));
 
 async function main() {
-  await mongoose.connect(process.env.URI);
+  await mongoose.connect(MONGODB_URI);
 }
-
-module.exports = main;
