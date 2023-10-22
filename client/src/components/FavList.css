@@ -1,0 +1,63 @@
+.favorite-list {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 30px;
+    background-color: #f0f0f0;
+  }
+  
+  .movie-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .movie-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .image {
+    flex: 1;
+  }
+  
+  /*we will replace this for the actual poster*/
+  .movie-square {
+    width: 100px; 
+    height: 100px; 
+    background-color: #007bff;
+    padding: 25px;
+  }
+  
+  details {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; 
+  }
+  
+  h3 {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .star {
+    font-size: 20px;
+    color: #f0c420;
+    align-self: flex-end;
+  }
+  
+  p {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  
+  .favorite-list {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
