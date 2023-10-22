@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./favButton.css";
+import "./FavButton.css";
 
 const FavoriteButton = ({ imageID }) => {
   const [isFavorite, setIsFavorite] = useState(false);
