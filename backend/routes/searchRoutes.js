@@ -1,10 +1,7 @@
-const express = require('express');
-const Router = express.Router
-const searchController = require('../controllers/searchController')
+const Router = require("express").Router();
+const {searchMovies} = require('../controllers/searchController')
 
 // Define a route for searching movies
-router.get('/search', searchController.searchMovies, (req, res) => {
-    // Route handling logic here
-});
+Router.get('/search', searchMovies)
 
-module.exports = router;
+module.exports =  Router;

@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from "react";
 import {useNavigate} from "react-router-dom";
 import axios from "axios";
-import { Col, Button, Row, Container, Form } from 'react-bootstrap';
+import { Col, Button, Row, Container, Form, Card } from 'react-bootstrap';
 
 
 // Define a React component for user signup
@@ -22,7 +22,7 @@ export default function Signup() {
       console.log(user)
 
       // Send a post request to the server for user sign up
-      let response = await axios.post("http://localhost:8000/movies/signup", user)
+      let response = await axios.post("http://localhost:8000/signup", user)
       if (response) {
         localStorage.setItem("token", response.data.token)
         alert(response.data.msg);
