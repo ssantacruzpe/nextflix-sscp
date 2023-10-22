@@ -11,3 +11,6 @@ Authors
 - Ruth Mwangi
 - Stephany Santa Cruz
   
+Useful links (pw protected)
+- Team management platform: https://trello.com/b/Lky5unx5/nextflix
+- Wireframe: https://www.figma.com/file/sholHL63hkrRQoTCkJxLpz/NEXTflix?type=design&node-id=0-1&mode=design&t=hbpjYu4obeNMx8Lx-0 
