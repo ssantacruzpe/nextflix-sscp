@@ -1,10 +1,13 @@
 const mongoose = require("mongoose");
 
-
-const imageSchema = new mongoose.Schema({
-    imageUrl:{type: String}, /*just for test*/
-    isFavorite: {type: Boolean},
+const favSchema = new mongoose.Schema({
+    movieID: { type: Number } /*just for test*/,
+    isFav: {
+type: Boolean,
+default: true,
+    },
 });
 
+const favModel = mongoose.model("favModel", favSchema);
 
-module.exports = mongoose.model('Image', imageSchema);
+module.exports = favModel;
