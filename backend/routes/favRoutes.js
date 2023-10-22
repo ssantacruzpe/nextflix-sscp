@@ -1,12 +1,11 @@
-/*
-
 const express = require("express");
 const router = express.Router();
-const {markFav, getAllFav} = require("../controllers/favControllers")
+const {markFav, getAllFav, removeFav} = require("../controllers/favControllers")
 
-router.put("/images/:id/favorite", markFav)
+
+router.post("/favorites/create", markFav)
 router.get("/favorites", getAllFav)
-router.delete("/images/:id/favorite", removeFav)
+router.delete("/favorites/delete/:id", removeFav)
+
 
 module.exports = router;
-*/  
