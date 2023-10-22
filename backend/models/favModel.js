@@ -1,9 +1,10 @@
-/*const mongoose = require("mongoose");
+const mongoose = require("mongoose");
+
 
 const imageSchema = new mongoose.Schema({
-  imageUrl: String,
-  isFavorite: Boolean
+    imageUrl:{type: String}, /*just for test*/
+    isFavorite: {type: Boolean},
 });
 
+
 module.exports = mongoose.model('Image', imageSchema);
-*/
