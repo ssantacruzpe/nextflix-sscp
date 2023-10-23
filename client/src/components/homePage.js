@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ImageComponent from "./GetImages";
 import PlayerModel from "./PlayerModel";
+import FavoriteButton from "./favButton";
 import {  useNavigate, useParams } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
 
@@ -71,6 +72,7 @@ const HomePage = () => {
         >
           <ImageComponent imagePath={movie.poster_path} />
           <h2>{movie.title}</h2>
+          <FavoriteButton/>
           <p>Release Date: {movie.release_date}</p>
           <p>Vote Average: {movie.vote_average * 10}%</p>
         </div>
