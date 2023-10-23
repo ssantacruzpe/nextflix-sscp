@@ -21,8 +21,11 @@ function MainNavbar() {
 
 
 
-  return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+  // return (
+    
+    // <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+    return (
+      <Navbar bg="dark" data-bs-theme="dark" collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="#home">
           <img
@@ -37,12 +40,12 @@ function MainNavbar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="https://www.netflix.com/browse">Home</Nav.Link>
-            <Nav.Link href="https://www.netflix.com/browse/genre/83">TV Shows</Nav.Link>
-            <Nav.Link href="https://www.netflix.com/browse/genre/34399">Movies</Nav.Link>
-            <Nav.Link href="https://www.netflix.com/latest">News&Popular</Nav.Link>
-            <Nav.Link href="https://www.netflix.com/browse/my-list">My List</Nav.Link>
-            <Nav.Link href="https://www.netflix.com/browse/original-audio">Browse by Languages</Nav.Link>
+            <Nav.Link href="#">Home</Nav.Link>
+            <Nav.Link href="#">TV Shows</Nav.Link>
+            <Nav.Link href="#">Movies</Nav.Link>
+            <Nav.Link href="#">News&Popular</Nav.Link>
+            <Nav.Link href="#">My List</Nav.Link>
+            <Nav.Link href="#">Browse by Languages</Nav.Link>
           </Nav>
           <Nav>
           <Form
